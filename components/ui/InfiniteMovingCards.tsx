@@ -67,7 +67,7 @@ export const InfiniteMovingCards = ({
     <div
       ref={containerRef}
       className={cn(
-        'scroller relative z-20  w-screen overflow-hidden  [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
+        'scroller relative z-20  w-screen overflow-hidden [mask-image:linear-gradient(to_right,transparent,white_20%,white_80%,transparent)]',
         className
       )}
     >
@@ -81,7 +81,7 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item, idx) => (
           <li
-            className='w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 py-6 md:p-16 md:w-[60vw]'
+            className=' w-[90vw] max-w-full relative rounded-2xl border border-b-0 flex-shrink-0 border-slate-800 p-5 py-6 md:p-16 md:w-[60vw]'
             style={{
               backgroundColor: 'linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(78,78,92,1) 35%, rgba(12,14,35,1) 100%)',
               background: 'rgb(4,7,29',
@@ -104,8 +104,8 @@ export const InfiniteMovingCards = ({
                   </div>
 
                   <div className='flex flex-col gap-1'>
-                    <span className='text-xl leading-[1.6] text-white font-bold'>{item.name}</span>
-                    <span className='text-sm leading-[1.6] text-white-200 font-normal'>{item.title}</span>
+                    <p className='text-xl leading-[1.6] text-white font-bold'>{item.name}</p>
+                    <p className='text-sm leading-[1.6] text-white-200 font-normal'>{item.title}</p>
                   </div>
                 </span>
               </div>
