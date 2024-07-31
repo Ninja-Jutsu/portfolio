@@ -1,8 +1,21 @@
-export const navItems = [
-  { name: 'About', link: '#about' },
-  { name: 'Projects', link: '#projects' },
-  { name: 'Testimonials', link: '#testimonials' },
-  { name: 'Contact', link: '#contact' },
+import { FaPersonCircleQuestion } from 'react-icons/fa6'
+import { FaDiagramProject } from 'react-icons/fa6'
+import { LiaCommentMedicalSolid } from 'react-icons/lia'
+import { FaChildReaching } from 'react-icons/fa6'
+
+import { IconType } from 'react-icons'
+
+interface NavItemsTypes {
+  name: string
+  link: string
+  icon: IconType
+}
+
+export const navItems: NavItemsTypes[] = [
+  { name: 'About', link: '#about', icon: FaPersonCircleQuestion },
+  { name: 'Projects', link: '#projects', icon: FaDiagramProject },
+  { name: 'Testimonials', link: '#testimonials', icon: LiaCommentMedicalSolid },
+  { name: 'Contact', link: '#contact', icon: FaChildReaching },
 ]
 
 export const gridItems = [
